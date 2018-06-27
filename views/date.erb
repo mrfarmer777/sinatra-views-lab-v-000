@@ -5,11 +5,11 @@
   </head>
   <body>
     <h1>Today</h1>
-    <% 
+    <%
       weekdays=["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday", "Saturday"]
       today=DateTime.now()
       weekday=weekdays[today.wday]
-      month=today.month
+      month=Date::MONTHNAMES[today.month]
       day=today.day
       year=today.year
     %>
